@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Management & Sales - Signmastr Business Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Signmastr</h1>
+                <p>Business Management System</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-roles.html">User Roles</a></li>
+                    <li><a href="lead-management.html">Lead Management</a></li>
+                    <li><a href="quotation-process.html">Quotation</a></li>
+                    <li><a href="design-phase.html">Design</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="project-closure.html">Project Closure</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="performance-scoring.html">Performance Scoring</a></li>
+                    <li><a href="integrations.html">Integrations</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Lead Management & Sales</h1>
+            <p>Comprehensive lead capture, tracking, and conversion system integrated with WhatsApp Business and website forms.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Lead Sources</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📱 WhatsApp Business</h3>
+                    <p><strong>Primary Source</strong></p>
+                    <p>Leads generated from Facebook ads directed to WhatsApp Business</p>
+                    <ul class="mt-2">
+                        <li>Multiple WhatsApp Business numbers supported</li>
+                        <li>Each number can be assigned to specific salespeople</li>
+                        <li>Automatic lead creation from new conversations</li>
+                        <li>Full conversation history stored in system</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🌐 Website SEO Forms</h3>
+                    <p><strong>Secondary Source</strong></p>
+                    <p>Organic leads from website contact forms</p>
+                    <ul class="mt-2">
+                        <li>Automatic form submission capture</li>
+                        <li>Lead data mapped to system fields</li>
+                        <li>Email notifications to sales team</li>
+                        <li>Response tracking and analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Lead Intake Process</h2>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>Step 1: Lead Arrives</h4>
+                    <p>Lead comes in from WhatsApp Business or website form</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Step 2: Automatic Lead Creation</h4>
+                    <p>System automatically creates a new lead record with all available information</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Step 3: Salesperson Assignment</h4>
+                    <p>System assigns or suggests salesperson based on:</p>
+                    <ul>
+                        <li>WhatsApp Business number used (if applicable)</li>
+                        <li>Round-robin distribution</li>
+                        <li>Manual assignment by administrator</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <h4>Step 4: Notification</h4>
+                    <p>Assigned salesperson receives notification and can begin engagement</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>WhatsApp Integration Details</h2>
+
+            <h3>Dual System Support</h3>
+            <div class="alert alert-info">
+                <p>The system supports both <strong>WhatsApp Business app</strong> and <strong>WhatsApp API</strong> simultaneously, allowing flexible transition from existing workflows to new system-based workflows.</p>
+            </div>
+
+            <h3>Key Features</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Multiple Numbers</h3>
+                    <p>Handle multiple WhatsApp Business numbers within the system</p>
+                </div>
+
+                <div class="card">
+                    <h3>Number Assignment</h3>
+                    <p>Each number can be assigned to specific salesperson(s)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Conversation Visibility</h3>
+                    <p>All WhatsApp conversations visible within the system interface</p>
+                </div>
+
+                <div class="card">
+                    <h3>Flexible Response</h3>
+                    <p>Sales team can choose to respond via WhatsApp Business app (existing workflow) or new system interface (future workflow)</p>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Response Options</h3>
+            <ul>
+                <li><strong>Option 1 (Current):</strong> Continue using WhatsApp Business app for responses while system tracks conversations</li>
+                <li><strong>Option 2 (Future):</strong> Respond directly through the system interface with full WhatsApp integration</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Lead Status Tracking</h2>
+
+            <p>The system automatically tracks and updates lead status through the entire sales funnel:</p>
+
+            <div class="scoring-breakdown">
+                <h3 class="mb-2">Automatic Status Tags</h3>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">New Lead</span>
+                    <span class="badge badge-primary">Initial</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Contacted</span>
+                    <span class="badge badge-primary">Active</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Interested</span>
+                    <span class="badge badge-primary">Engaged</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Site Visit Scheduled</span>
+                    <span class="badge badge-warning">Scheduled</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Site Visit Completed</span>
+                    <span class="badge badge-warning">Completed</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Awaiting Basic Draft</span>
+                    <span class="badge badge-secondary">Queued</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Basic Draft In Progress</span>
+                    <span class="badge badge-warning">Design</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Basic Draft Completed</span>
+                    <span class="badge badge-success">Design</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Quotation Sent</span>
+                    <span class="badge badge-warning">Awaiting Response</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Quotation Approved</span>
+                    <span class="badge badge-success">Approved</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Payment Received (50%)</span>
+                    <span class="badge badge-success">Paid</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">In Full Design</span>
+                    <span class="badge badge-warning">Design</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Full Design Approved</span>
+                    <span class="badge badge-success">Design</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">In Manufacturing</span>
+                    <span class="badge badge-warning">Production</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Ready for Installation</span>
+                    <span class="badge badge-success">Production</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Installed</span>
+                    <span class="badge badge-success">Complete</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Final Payment Pending</span>
+                    <span class="badge badge-warning">Payment</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Completed</span>
+                    <span class="badge badge-success">Closed</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Lost/Declined</span>
+                    <span class="badge-secondary">Closed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Sales Performance Monitoring</h2>
+
+            <h3>Sales Performance Metrics</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">📊</div>
+                    <div class="metric-label">Number of leads assigned per salesperson</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">⏱️</div>
+                    <div class="metric-label">Response time to new leads</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">📈</div>
+                    <div class="metric-label">Conversion rate (leads to quotations)</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">✅</div>
+                    <div class="metric-label">Quotation acceptance rate</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">💰</div>
+                    <div class="metric-label">Total sales value per salesperson</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">📏</div>
+                    <div class="metric-label">Average deal size</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">💬</div>
+                    <div class="metric-label">Communication activity analysis</div>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Lead Performance Metrics</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">🎯</div>
+                    <div class="metric-label">Lead source effectiveness</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">⏳</div>
+                    <div class="metric-label">Time in each status stage</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">📉</div>
+                    <div class="metric-label">Drop-off points in the sales funnel</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-value">🕐</div>
+                    <div class="metric-label">Conversion time (lead to sale)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Performance Tracking</h2>
+
+            <div class="alert alert-info">
+                <strong>Performance Scoring System:</strong> Salespeople are tracked on response times, conversion rates, and sales efficiency. For complete details on how performance is measured and rewarded, see the <a href="performance-scoring.html" style="color: var(--secondary-color); font-weight: 600;">Performance Scoring page</a>.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Signmastr Business Management System</strong></p>
+            <p>Product Requirements Document - Version 1.0</p>
+            <p>© 2025 Signmastr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

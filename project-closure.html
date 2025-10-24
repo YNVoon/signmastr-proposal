@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Closure & Invoicing - Signmastr Business Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Signmastr</h1>
+                <p>Business Management System</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-roles.html">User Roles</a></li>
+                    <li><a href="lead-management.html">Lead Management</a></li>
+                    <li><a href="quotation-process.html">Quotation</a></li>
+                    <li><a href="design-phase.html">Design</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="project-closure.html">Project Closure</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="performance-scoring.html">Performance Scoring</a></li>
+                    <li><a href="integrations.html">Integrations</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Project Closure & Invoicing</h1>
+            <p>Final invoicing, payment collection, and project archival - completing the project lifecycle.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Project Completion Triggers</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>✅ Installer Completion</h3>
+                    <p>Installer marks installation as complete via mobile app</p>
+                </div>
+
+                <div class="card">
+                    <h3>📄 Signed Delivery Order</h3>
+                    <p>Signed delivery order uploaded to system</p>
+                </div>
+
+                <div class="card">
+                    <h3>👨‍💼 Administrator Confirmation</h3>
+                    <p>Administrator reviews and confirms completion</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Status Update</h3>
+                    <p>System updates project status to "Installation Complete"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Project Completion Workflow</h2>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>1. Automatic Status Update</h4>
+                    <p>System automatically updates project status to "Installation Complete"</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>2. Notifications Sent</h4>
+                    <p>Notification sent to:</p>
+                    <ul>
+                        <li>Administrator (for review and invoice generation)</li>
+                        <li>Salesperson (for customer follow-up)</li>
+                        <li>Accounting team (for payment tracking)</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <h4>3. Final Invoice Ready</h4>
+                    <p>System ready to generate final invoice for remaining payment</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Final Invoice Generation</h2>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>1. Administrator Review</h4>
+                    <p>Administrator reviews project completion:</p>
+                    <ul>
+                        <li>Signed delivery order verified</li>
+                        <li>Installation photos reviewed</li>
+                        <li>Customer signature confirmed</li>
+                        <li>No pending issues or complaints</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <h4>2. System Calculates Remaining Payment</h4>
+                    <p>System automatically calculates remaining 50% payment:</p>
+                    <ul>
+                        <li>Original quotation total</li>
+                        <li>Less: 50% deposit already paid</li>
+                        <li>Plus: Any additional charges or modifications</li>
+                        <li>Equals: Final balance due</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <h4>3. Generate Final Invoice</h4>
+                    <p>System generates final invoice via Autocount API</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>4. Invoice Contents</h4>
+                    <p>Final invoice includes:</p>
+                    <ul>
+                        <li>Previous payment (50% deposit) - marked as paid</li>
+                        <li>Remaining balance (50%)</li>
+                        <li>Any additional charges (if applicable)</li>
+                        <li>Payment terms and due date</li>
+                        <li>Payment methods accepted</li>
+                    </ul>
+                </div>
+
+                <div class="process-step">
+                    <h4>5. Invoice Sent to Customer</h4>
+                    <p>Invoice sent via email and/or WhatsApp</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Payment Tracking</h2>
+
+            <h3>Invoice Status Tracking</h3>
+            <div class="scoring-breakdown">
+                <div class="bonus-tier">
+                    <span class="tier-name">Invoice Sent</span>
+                    <span class="badge badge-primary">Awaiting Payment</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Payment Pending</span>
+                    <span class="badge badge-warning">Reminder Sent</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Payment Received</span>
+                    <span class="badge badge-success">Paid in Full</span>
+                </div>
+
+                <div class="bonus-tier">
+                    <span class="tier-name">Project Fully Closed</span>
+                    <span class="badge badge-success">Complete</span>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Payment Tracking Features</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📅 Due Date Tracking</h3>
+                    <p>Track invoice due dates and send automatic reminders</p>
+                </div>
+
+                <div class="card">
+                    <h3>💰 Payment Recording</h3>
+                    <p>Record payment details including amount, date, and method</p>
+                </div>
+
+                <div class="card">
+                    <h3>📧 Automatic Reminders</h3>
+                    <p>Send automatic payment reminders before and after due date</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Outstanding Reports</h3>
+                    <p>Generate reports of outstanding invoices and aging analysis</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Project Archive</h2>
+
+            <p>All project documents are automatically archived for future reference, warranty claims, and audit purposes.</p>
+
+            <h3>Archived Documents</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>📞 Initial Contact</h3>
+                    <ul>
+                        <li>Initial enquiry/lead details</li>
+                        <li>Lead source information</li>
+                        <li>All communications history</li>
+                        <li>WhatsApp conversation logs</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📝 Sales Documentation</h3>
+                    <ul>
+                        <li>Site visit photos</li>
+                        <li>Measurements and specifications</li>
+                        <li>Quotation (all versions)</li>
+                        <li>Payment receipts (50% deposit)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🎨 Design Files</h3>
+                    <ul>
+                        <li>Basic draft files</li>
+                        <li>Full design files (all versions)</li>
+                        <li>Amendment history</li>
+                        <li>Customer approvals and feedback</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🏭 Manufacturing Records</h3>
+                    <ul>
+                        <li>Manufacturing job order</li>
+                        <li>Production photos</li>
+                        <li>Quality check documentation</li>
+                        <li>Material usage records</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🔧 Installation Documentation</h3>
+                    <ul>
+                        <li>Before/after site photos</li>
+                        <li>GPS location data</li>
+                        <li>Signed delivery order</li>
+                        <li>Customer feedback</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>💵 Financial Records</h3>
+                    <ul>
+                        <li>Final invoice</li>
+                        <li>All payment receipts</li>
+                        <li>Payment history</li>
+                        <li>Outstanding balance (if any)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Archive Features</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🔍 Searchable History</h3>
+                    <p>Search projects by customer, date, project type, or any field</p>
+                </div>
+
+                <div class="card">
+                    <h3>📥 Easy Access</h3>
+                    <p>Instant access to all project documents from single interface</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔒 Secure Storage</h3>
+                    <p>Cloud-based storage with backup and security</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛡️ Warranty Support</h3>
+                    <p>Quick reference for warranty claims and service calls</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Customer Rating Collection</h2>
+
+            <div class="alert alert-info">
+                <strong>Automated Customer Feedback:</strong> After installation completion, system sends automated customer rating request for quality assurance and team performance tracking.
+            </div>
+
+            <h3>Rating Collection Process</h3>
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>1. Automatic Rating Request</h4>
+                    <p>System sends automated rating request via SMS, email, or WhatsApp</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>2. Customer Submits Rating</h4>
+                    <p>Customer submits 1-5 star rating through simple digital form</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>3. Optional Text Feedback</h4>
+                    <p>Customer can provide additional comments or feedback</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>4. Team Identification</h4>
+                    <p>System identifies all team members who worked on the project</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>5. Points Distribution</h4>
+                    <p>System automatically awards customer impact points to all team members</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-section">
+            <h2>Team Performance Recognition</h2>
+
+            <div class="alert alert-info">
+                <strong>Performance Measurement:</strong> All team members who contributed to a project are evaluated based on customer ratings, project completion timelines, and overall quality. For complete scoring details including customer impact points, project success bonuses, and recognition criteria, see the <a href="performance-scoring.html" style="color: var(--secondary-color); font-weight: 600;">Performance Scoring page</a>.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Post-Closure Activities</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🔄 Repeat Business</h3>
+                    <p>Customer marked for potential repeat business and follow-up</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Performance Analysis</h3>
+                    <p>Project data used for performance metrics and reporting</p>
+                </div>
+
+                <div class="card">
+                    <h3>💡 Process Improvement</h3>
+                    <p>Learn from project data to improve future workflows</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛡️ Warranty Tracking</h3>
+                    <p>Warranty period tracked for service and support</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Complete Project Lifecycle Summary</h2>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>✅ Lead Captured</h4>
+                    <p>From WhatsApp Business or website form</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Site Visit Completed</h4>
+                    <p>Information gathered and documented</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Basic Draft Created</h4>
+                    <p>Initial design for quotation</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Quotation Approved & Sent</h4>
+                    <p>Administrator approval and customer delivery</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Payment Received (50%)</h4>
+                    <p>Deposit collected to proceed</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Full Design Approved</h4>
+                    <p>Production-ready design completed</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Manufacturing Completed</h4>
+                    <p>Signboard produced with quality check</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Installation Complete</h4>
+                    <p>Installed with customer sign-off</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Final Payment Received</h4>
+                    <p>Remaining 50% collected</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>✅ Project Archived</h4>
+                    <p>All documents stored for future reference</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Signmastr Business Management System</strong></p>
+            <p>Product Requirements Document - Version 1.0</p>
+            <p>© 2025 Signmastr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

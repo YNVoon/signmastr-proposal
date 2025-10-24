@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Integrations - Signmastr Business Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Signmastr</h1>
+                <p>Business Management System</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-roles.html">User Roles</a></li>
+                    <li><a href="lead-management.html">Lead Management</a></li>
+                    <li><a href="quotation-process.html">Quotation</a></li>
+                    <li><a href="design-phase.html">Design</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="project-closure.html">Project Closure</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="performance-scoring.html">Performance Scoring</a></li>
+                    <li><a href="integrations.html">Integrations</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>System Integration Requirements</h1>
+            <p>Integration with WhatsApp Business, Autocount, and website forms for seamless data flow and automation.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Integration Overview</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📱 WhatsApp Business</h3>
+                    <p>Primary lead source from Facebook ads</p>
+                </div>
+
+                <div class="card">
+                    <h3>💼 Autocount API</h3>
+                    <p>Quotations, invoices, and delivery orders</p>
+                </div>
+
+                <div class="card">
+                    <h3>🌐 Website Forms</h3>
+                    <p>Organic lead capture from SEO</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>1. WhatsApp Integration</h2>
+
+            <div class="alert alert-info">
+                <strong>Dual System Support:</strong> The system supports both WhatsApp Business app and WhatsApp API simultaneously, allowing flexible transition from existing workflows to system-based workflows.
+            </div>
+
+            <h3>Functionality Requirements</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>📩 Message Reception</h3>
+                    <p>Receive messages from multiple WhatsApp Business numbers</p>
+                    <ul class="mt-2">
+                        <li>Multiple number support</li>
+                        <li>Real-time message sync</li>
+                        <li>Message history storage</li>
+                        <li>Automatic lead creation</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>💬 Two-Way Communication</h3>
+                    <p>Send and receive messages within system</p>
+                    <ul class="mt-2">
+                        <li>System interface messaging</li>
+                        <li>WhatsApp Business app support</li>
+                        <li>Message threading</li>
+                        <li>Read receipts</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Conversation Display</h3>
+                    <p>All conversations visible in system interface</p>
+                    <ul class="mt-2">
+                        <li>Chronological display</li>
+                        <li>Media attachments</li>
+                        <li>Contact information</li>
+                        <li>Searchable history</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📈 Analytics</h3>
+                    <p>Chat analytics for performance monitoring</p>
+                    <ul class="mt-2">
+                        <li>Response time tracking</li>
+                        <li>Message count</li>
+                        <li>Engagement metrics</li>
+                        <li>Conversion tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Technical Implementation</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Implementation Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WhatsApp Business App</td>
+                        <td>Read-only integration via WhatsApp Web API or manual sync</td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp Business API</td>
+                        <td>Official WhatsApp Business Platform API for full two-way messaging</td>
+                    </tr>
+                    <tr>
+                        <td>Number Assignment</td>
+                        <td>Database mapping of phone numbers to salesperson accounts</td>
+                    </tr>
+                    <tr>
+                        <td>Lead Creation</td>
+                        <td>Automatic lead record creation from new conversations</td>
+                    </tr>
+                    <tr>
+                        <td>Message Storage</td>
+                        <td>Cloud-based message database with encryption</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Response Workflow Options</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>Option 1: Current Workflow</h3>
+                    <p>Continue using WhatsApp Business app</p>
+                    <ul class="mt-2">
+                        <li>System tracks conversations</li>
+                        <li>Responses via Business app</li>
+                        <li>Familiar to current team</li>
+                        <li>Gradual transition possible</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Option 2: Future Workflow</h3>
+                    <p>Respond through system interface</p>
+                    <ul class="mt-2">
+                        <li>Full integration</li>
+                        <li>Centralized communication</li>
+                        <li>Better tracking</li>
+                        <li>Enhanced automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>2. Autocount API Integration</h2>
+
+            <h3>Documents to Generate</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📄 Quotations</h3>
+                    <p>Professional quotation documents</p>
+                    <ul class="mt-2">
+                        <li>Customer information</li>
+                        <li>Itemized pricing</li>
+                        <li>Terms and conditions</li>
+                        <li>Company branding</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>💵 Invoices</h3>
+                    <p>Final invoices for payment</p>
+                    <ul class="mt-2">
+                        <li>Payment history</li>
+                        <li>Outstanding balance</li>
+                        <li>Payment terms</li>
+                        <li>Tax calculations</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🚚 Delivery Orders</h3>
+                    <p>Installation delivery documentation</p>
+                    <ul class="mt-2">
+                        <li>Items delivered</li>
+                        <li>Customer signature</li>
+                        <li>Delivery details</li>
+                        <li>Terms of service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Integration Requirements</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Automatic Synchronization</strong></td>
+                        <td>Customer data, product information, and pricing automatically sync between systems</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Document Formatting</strong></td>
+                        <td>All documents formatted per Signmastr standards with branding</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Consistency</strong></td>
+                        <td>Customer data maintained consistently across both systems</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Error Handling</strong></td>
+                        <td>Automatic error detection with notifications for failed operations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PDF Generation</strong></td>
+                        <td>Generate downloadable PDF versions of all documents</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Data Flow</h3>
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>1. Document Request</h4>
+                    <p>System requests document generation from Autocount API</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>2. Data Transmission</h4>
+                    <p>Customer data, project details, and pricing sent to Autocount</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>3. Document Generation</h4>
+                    <p>Autocount generates formatted document</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>4. Document Return</h4>
+                    <p>Generated document returned to system</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>5. Storage & Distribution</h4>
+                    <p>Document stored in system and distributed to relevant parties</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>3. Website Form Integration</h2>
+
+            <h3>Requirements</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🔄 Automatic Lead Creation</h3>
+                    <p>Form submissions automatically create lead records</p>
+                    <ul class="mt-2">
+                        <li>Real-time processing</li>
+                        <li>Validation rules</li>
+                        <li>Duplicate detection</li>
+                        <li>Lead assignment</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🗺️ Form Data Mapping</h3>
+                    <p>Form fields mapped to system fields</p>
+                    <ul class="mt-2">
+                        <li>Name and contact info</li>
+                        <li>Company details</li>
+                        <li>Project requirements</li>
+                        <li>Source tracking</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📧 Email Notifications</h3>
+                    <p>Notify sales team of new leads</p>
+                    <ul class="mt-2">
+                        <li>Instant notifications</li>
+                        <li>Lead details included</li>
+                        <li>Assignment information</li>
+                        <li>Response tracking</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Response Tracking</h3>
+                    <p>Track sales team response to form leads</p>
+                    <ul class="mt-2">
+                        <li>Response time</li>
+                        <li>First contact method</li>
+                        <li>Conversion tracking</li>
+                        <li>Source analysis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Technical Implementation</h3>
+            <ul>
+                <li><strong>API Endpoint:</strong> Secure API endpoint to receive form submissions</li>
+                <li><strong>Webhook Integration:</strong> Website triggers webhook on form submission</li>
+                <li><strong>Data Validation:</strong> Server-side validation of all form data</li>
+                <li><strong>Spam Protection:</strong> CAPTCHA and rate limiting to prevent spam</li>
+                <li><strong>Error Handling:</strong> Graceful error handling with user feedback</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Optional Future Enhancements</h2>
+
+            <h3>Customer Portal</h3>
+            <div class="alert alert-warning">
+                <strong>Status:</strong> Marked as optional future enhancement in implementation roadmap
+            </div>
+
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>👤 Customer Access</h3>
+                    <p>Customers can log in to view their projects</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Project Status</h3>
+                    <p>Real-time project status visibility</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎨 Design Approval</h3>
+                    <p>Approve or request design amendments online</p>
+                </div>
+
+                <div class="card">
+                    <h3>💰 Payment Tracking</h3>
+                    <p>View payment history and outstanding balance</p>
+                </div>
+
+                <div class="card">
+                    <h3>📄 Document Access</h3>
+                    <p>Download quotations, invoices, and delivery orders</p>
+                </div>
+
+                <div class="card">
+                    <h3>📧 Communication</h3>
+                    <p>Message the team directly through portal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Integration Security</h2>
+
+            <h3>Security Measures</h3>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🔐 Authentication</h3>
+                    <ul>
+                        <li>API key authentication</li>
+                        <li>OAuth 2.0 where applicable</li>
+                        <li>Secure token storage</li>
+                        <li>Regular key rotation</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🔒 Data Encryption</h3>
+                    <ul>
+                        <li>TLS/SSL for data in transit</li>
+                        <li>Encrypted storage at rest</li>
+                        <li>Secure API endpoints</li>
+                        <li>HTTPS only</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🛡️ Access Control</h3>
+                    <ul>
+                        <li>Role-based permissions</li>
+                        <li>IP whitelisting</li>
+                        <li>Rate limiting</li>
+                        <li>Audit logging</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📋 Compliance</h3>
+                    <ul>
+                        <li>GDPR compliance</li>
+                        <li>Data privacy laws</li>
+                        <li>Industry standards</li>
+                        <li>Regular security audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Integration Testing & Monitoring</h2>
+
+            <h3>Testing Requirements</h3>
+            <ul>
+                <li><strong>Unit Testing:</strong> Test each integration endpoint independently</li>
+                <li><strong>Integration Testing:</strong> Test complete data flow between systems</li>
+                <li><strong>Load Testing:</strong> Ensure integrations handle expected traffic</li>
+                <li><strong>Error Scenario Testing:</strong> Test handling of API failures and timeouts</li>
+                <li><strong>Data Validation Testing:</strong> Verify data accuracy across systems</li>
+            </ul>
+
+            <h3 class="mt-3">Monitoring</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>📊 Performance Monitoring</h3>
+                    <p>Track API response times and throughput</p>
+                </div>
+
+                <div class="card">
+                    <h3>⚠️ Error Tracking</h3>
+                    <p>Log and alert on integration errors</p>
+                </div>
+
+                <div class="card">
+                    <h3>📈 Usage Analytics</h3>
+                    <p>Monitor integration usage patterns</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔔 Alerting</h3>
+                    <p>Automatic alerts for integration failures</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Signmastr Business Management System</strong></p>
+            <p>Product Requirements Document - Version 1.0</p>
+            <p>© 2025 Signmastr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

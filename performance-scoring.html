@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Scoring & Bonus System - Signmastr</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Signmastr</h1>
+                <p>Business Management System</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-roles.html">User Roles</a></li>
+                    <li><a href="lead-management.html">Lead Management</a></li>
+                    <li><a href="quotation-process.html">Quotation</a></li>
+                    <li><a href="design-phase.html">Design</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="project-closure.html">Project Closure</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="performance-scoring.html">Performance Scoring</a></li>
+                    <li><a href="integrations.html">Integrations</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Performance Scoring & Bonus System</h1>
+            <p>Comprehensive quarterly scoring system designed to measure and reward individual performance based on measurable outcomes.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Overview</h2>
+
+            <div class="alert alert-info">
+                <strong>Purpose:</strong> Measure individual performance and award quarterly bonuses based on measurable outcomes, while promoting teamwork and quality work.
+            </div>
+
+            <h3>Key Principles</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>📅 Quarterly Cycle</h3>
+                    <p>Scoring periods run every 3 months</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎓 30-Day Learning Period</h3>
+                    <p>First 30 days are practice mode - scores visible but not counted toward bonuses</p>
+                </div>
+
+                <div class="card">
+                    <h3>➕ Positive Reinforcement Only</h3>
+                    <p>Good performance earns points, poor performance simply doesn't award points</p>
+                </div>
+
+                <div class="card">
+                    <h3>👥 Dynamic Teams</h3>
+                    <p>Each project involves different team members, individual contributions tracked per project</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔍 Full Transparency</h3>
+                    <p>All scoring rules visible to employees with personal dashboards</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚫 No Competition</h3>
+                    <p>No leaderboards or public rankings - focus on personal performance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Scoring Structure</h2>
+
+            <div class="scoring-breakdown">
+                <h3 class="text-center">Each Employee's Quarterly Score</h3>
+
+                <div class="cards-grid mt-2">
+                    <div class="card">
+                        <h3 class="text-primary">Individual Performance</h3>
+                        <p class="metric-value">50%</p>
+                        <p>Your own work quality and speed</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-primary">Collaboration Quality</h3>
+                        <p class="metric-value">30%</p>
+                        <p>Smooth handoffs and teamwork</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-primary">Customer Impact</h3>
+                        <p class="metric-value">20%</p>
+                        <p>Customer satisfaction shared by all team members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 id="salesperson-scoring">1. Salesperson Scoring (Individual Performance 50%)</h2>
+
+            <h3>Job Completion Points (Base: 100 points per paid project)</h3>
+            <p>Project successfully moved to full design phase: <span class="points-badge">100 points</span></p>
+            <p><em>Complexity multiplier applied (Simple 1x, Medium 1.5x, High 2x)</em></p>
+
+            <div class="alert alert-success mt-2">
+                <strong>How Measured:</strong> When payment confirmed and project status changes to "Full Design Queue", system automatically awards 100 points × complexity multiplier
+            </div>
+
+            <h3 class="mt-3">Site Visit Quality Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quality Metric</th>
+                        <th>Points</th>
+                        <th>How Measured</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Complete site documentation</td>
+                        <td><span class="points-badge">+25</span></td>
+                        <td>System validates all required fields filled</td>
+                    </tr>
+                    <tr>
+                        <td>High-quality photos (≥5 photos)</td>
+                        <td><span class="points-badge">+15</span></td>
+                        <td>System counts photos uploaded</td>
+                    </tr>
+                    <tr>
+                        <td>Accurate measurements</td>
+                        <td><span class="points-badge">+20</span></td>
+                        <td>Designer rates as "Complete & Accurate"</td>
+                    </tr>
+                    <tr>
+                        <td>Branding materials collected</td>
+                        <td><span class="points-badge">+10</span></td>
+                        <td>Logo/branding files uploaded</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Speed Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Time Target</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lead response</td>
+                        <td>Within 1 hour</td>
+                        <td><span class="points-badge">+20</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lead response</td>
+                        <td>Within 4 hours</td>
+                        <td><span class="points-badge">+10</span></td>
+                    </tr>
+                    <tr>
+                        <td>Site visit completed</td>
+                        <td>Within 3 days of interest</td>
+                        <td><span class="points-badge">+20</span></td>
+                    </tr>
+                    <tr>
+                        <td>Quotation sent</td>
+                        <td>Within 2 days of basic draft</td>
+                        <td><span class="points-badge">+15</span></td>
+                    </tr>
+                    <tr>
+                        <td>Payment collected</td>
+                        <td>Within 7 days of approval</td>
+                        <td><span class="points-badge">+25</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Quality Bonus</h3>
+            <ul>
+                <li><strong>Complete requirements for basic draft:</strong> <span class="points-badge">+30</span> (Designer confirms)</li>
+                <li><strong>Zero missing info for full design:</strong> <span class="points-badge">+20</span> (No clarification requests)</li>
+                <li><strong>Accurate quotation:</strong> <span class="points-badge">+15</span> (No edits after approval)</li>
+            </ul>
+
+            <h3 class="mt-3">Quarterly Volume Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projects Closed (per quarter)</th>
+                        <th>Bonus Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10-15 projects</td>
+                        <td><span class="points-badge">+200</span></td>
+                    </tr>
+                    <tr>
+                        <td>16-25 projects</td>
+                        <td><span class="points-badge">+500</span></td>
+                    </tr>
+                    <tr>
+                        <td>26+ projects</td>
+                        <td><span class="points-badge">+1,000</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h2 id="designer-scoring">2. Designer Scoring (Individual Performance 50%)</h2>
+
+            <div class="alert alert-info">
+                <strong>Important:</strong> Designers earn points for TWO types of work: Basic Drafts (for quotations) and Full Designs (after payment). The designer who accepts a basic draft is automatically assigned to complete the full design for continuity.
+            </div>
+
+            <h3>A. Basic Draft Completion Points</h3>
+            <p>Basic draft completed: <span class="points-badge">30 points</span> (× complexity multiplier)</p>
+
+            <h4 class="mt-2">Basic Draft Speed Bonus</h4>
+            <ul>
+                <li>Completed in ≤1 day: <span class="points-badge">+20</span></li>
+                <li>Completed in 2 days: <span class="points-badge">+10</span></li>
+            </ul>
+
+            <h4 class="mt-2">Basic Draft Quality Bonus</h4>
+            <ul>
+                <li>Approved on first submission: <span class="points-badge">+15</span></li>
+                <li>Complete information provided: <span class="points-badge">+10</span></li>
+            </ul>
+
+            <h3 class="mt-3">B. Full Design Completion Points</h3>
+            <p>Full design approved: <span class="points-badge">100 points</span> (× complexity multiplier)</p>
+
+            <h4 class="mt-2">Full Design Speed Bonus (adjusted by complexity)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Completion Time</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>≤3 days</td>
+                        <td><span class="points-badge">+50</span></td>
+                    </tr>
+                    <tr>
+                        <td>4-5 days</td>
+                        <td><span class="points-badge">+30</span></td>
+                    </tr>
+                    <tr>
+                        <td>6-7 days</td>
+                        <td><span class="points-badge">+15</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="mt-2">Full Design Quality Bonus</h4>
+            <ul>
+                <li>Approved on first submission (0 revisions): <span class="points-badge">+50</span></li>
+                <li>Approved on second submission (1 revision): <span class="points-badge">+25</span></li>
+                <li>Complete specifications for manufacturing: <span class="points-badge">+20</span></li>
+            </ul>
+
+            <h4 class="mt-2">Efficiency Bonus</h4>
+            <ul>
+                <li>Salesperson confirms clear communication: <span class="points-badge">+15</span></li>
+                <li>Manufacturing confirms clear specifications: <span class="points-badge">+15</span></li>
+            </ul>
+
+            <h3 class="mt-3">Quarterly Volume Bonus</h3>
+            <p><strong>Basic Drafts:</strong></p>
+            <ul>
+                <li>20-35 completed: <span class="points-badge">+200</span></li>
+                <li>36-50 completed: <span class="points-badge">+400</span></li>
+                <li>51+ completed: <span class="points-badge">+800</span></li>
+            </ul>
+
+            <p class="mt-2"><strong>Full Designs:</strong></p>
+            <ul>
+                <li>15-25 completed: <span class="points-badge">+300</span></li>
+                <li>26-40 completed: <span class="points-badge">+700</span></li>
+                <li>41+ completed: <span class="points-badge">+1,500</span></li>
+            </ul>
+
+            <div class="alert alert-success mt-2">
+                Both volume bonuses can be earned in the same quarter!
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 id="manufacturing-scoring">3. Manufacturing Team Scoring (Individual Performance 50%)</h2>
+
+            <h3>Job Completion Points</h3>
+            <p>Job completed and ready for installation: <span class="points-badge">100 points</span> (× complexity multiplier)</p>
+
+            <h3 class="mt-3">Speed Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Achievement</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Within estimated timeline</td>
+                        <td><span class="points-badge">+40</span></td>
+                    </tr>
+                    <tr>
+                        <td>20% faster than estimate</td>
+                        <td><span class="points-badge">+70</span></td>
+                    </tr>
+                    <tr>
+                        <td>50% faster than estimate</td>
+                        <td><span class="points-badge">+100</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Quality Bonus</h3>
+            <ul>
+                <li>Passes quality check on first attempt: <span class="points-badge">+50</span></li>
+                <li>Zero defects reported: <span class="points-badge">+40</span></li>
+                <li>Complete photo documentation: <span class="points-badge">+20</span></li>
+                <li>Accurate material usage (within 10%): <span class="points-badge">+25</span></li>
+            </ul>
+
+            <h3 class="mt-3">Safety & Process Bonus</h3>
+            <ul>
+                <li>Safety checklist completed: <span class="points-badge">+15</span></li>
+                <li>Work area properly maintained: <span class="points-badge">+10</span></li>
+            </ul>
+
+            <h3 class="mt-3">Quarterly Volume Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jobs Completed (per quarter)</th>
+                        <th>Bonus Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20-35 jobs</td>
+                        <td><span class="points-badge">+400</span></td>
+                    </tr>
+                    <tr>
+                        <td>36-55 jobs</td>
+                        <td><span class="points-badge">+900</span></td>
+                    </tr>
+                    <tr>
+                        <td>56+ jobs</td>
+                        <td><span class="points-badge">+1,800</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h2 id="installer-scoring">4. Installer Scoring (Individual Performance 50%)</h2>
+
+            <h3>Job Completion Points</h3>
+            <p>Installation completed with signed delivery order: <span class="points-badge">100 points</span> (× complexity multiplier)</p>
+
+            <h3 class="mt-3">Speed Bonus</h3>
+            <ul>
+                <li>Completed on scheduled date: <span class="points-badge">+30</span></li>
+                <li>Completed ahead of schedule: <span class="points-badge">+50</span></li>
+            </ul>
+
+            <h3 class="mt-3">Quality Bonus</h3>
+            <ul>
+                <li>Complete site check-in documentation: <span class="points-badge">+15</span></li>
+                <li>Complete site check-out documentation: <span class="points-badge">+15</span></li>
+                <li>Before/after photos uploaded: <span class="points-badge">+20</span></li>
+                <li>Customer signature obtained: <span class="points-badge">+20</span></li>
+                <li>Zero installation issues reported: <span class="points-badge">+40</span></li>
+            </ul>
+
+            <h3 class="mt-3">Professionalism Bonus</h3>
+            <ul>
+                <li>Customer leaves positive feedback: <span class="points-badge">+30</span></li>
+                <li>Site left clean and professional: <span class="points-badge">+20</span></li>
+            </ul>
+
+            <h3 class="mt-3">Quarterly Volume Bonus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Installations (per quarter)</th>
+                        <th>Bonus Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15-25 installations</td>
+                        <td><span class="points-badge">+300</span></td>
+                    </tr>
+                    <tr>
+                        <td>26-40 installations</td>
+                        <td><span class="points-badge">+700</span></td>
+                    </tr>
+                    <tr>
+                        <td>41+ installations</td>
+                        <td><span class="points-badge">+1,500</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h2 id="collaboration-scoring">Collaboration Quality Metrics (30%)</h2>
+
+            <p><strong>Purpose:</strong> Reward smooth handoffs and teamwork, even though teams change per project.</p>
+
+            <h3>Peer Rating System</h3>
+            <div class="alert alert-info">
+                <strong>How It Works:</strong> After each stage, the next person rates the handoff quality with a simple 1-click rating: Complete, Good, or Poor
+            </div>
+
+            <h3 class="mt-3">Salesperson Collaboration</h3>
+            <h4>Clean Handoff to Designer (per project)</h4>
+            <ul>
+                <li>Designer rates "Complete": <span class="points-badge">+40</span></li>
+                <li>Designer rates "Good": <span class="points-badge">+20</span></li>
+                <li>Designer rates "Poor": 0 points</li>
+            </ul>
+
+            <h4 class="mt-2">Responsiveness</h4>
+            <ul>
+                <li>Responds to designer questions within 2 hours: <span class="points-badge">+15 per instance</span></li>
+                <li>Provides clear amendments feedback: <span class="points-badge">+15</span></li>
+            </ul>
+
+            <h4 class="mt-2">Project Smooth Flow</h4>
+            <ul>
+                <li>Project moves through without sales-caused delays: <span class="points-badge">+30</span></li>
+            </ul>
+
+            <h3 class="mt-3">Designer Collaboration</h3>
+            <h4>Clean Handoff to Manufacturing (per project)</h4>
+            <ul>
+                <li>Manufacturing rates "Complete": <span class="points-badge">+40</span></li>
+                <li>Manufacturing rates "Good": <span class="points-badge">+20</span></li>
+                <li>Manufacturing rates "Poor": 0 points</li>
+            </ul>
+
+            <h4 class="mt-2">Responsiveness</h4>
+            <ul>
+                <li>Responds to salesperson within 4 hours: <span class="points-badge">+15</span></li>
+                <li>Responds to manufacturing within 4 hours: <span class="points-badge">+15</span></li>
+            </ul>
+
+            <h4 class="mt-2">Project Smooth Flow</h4>
+            <ul>
+                <li>No design-caused delays: <span class="points-badge">+30</span></li>
+            </ul>
+
+            <h3 class="mt-3">Manufacturing Collaboration</h3>
+            <h4>Clean Handoff to Installation (per project)</h4>
+            <ul>
+                <li>Installer rates "Complete": <span class="points-badge">+40</span></li>
+                <li>Installer rates "Good": <span class="points-badge">+20</span></li>
+                <li>Installer rates "Poor": 0 points</li>
+            </ul>
+
+            <h4 class="mt-2">Feedback Loop</h4>
+            <ul>
+                <li>Reports design issues early: <span class="points-badge">+25</span></li>
+                <li>Provides material feedback: <span class="points-badge">+15</span></li>
+            </ul>
+
+            <h4 class="mt-2">Project Smooth Flow</h4>
+            <ul>
+                <li>No manufacturing-caused delays: <span class="points-badge">+30</span></li>
+            </ul>
+
+            <h3 class="mt-3">Installer Collaboration</h3>
+            <h4>Installation Excellence</h4>
+            <ul>
+                <li>Zero callbacks/fixes needed: <span class="points-badge">+40</span></li>
+                <li>Reports issues for future improvements: <span class="points-badge">+20</span></li>
+            </ul>
+
+            <h4 class="mt-2">Communication</h4>
+            <ul>
+                <li>Prompt completion update: <span class="points-badge">+15</span></li>
+                <li>Reports site issues immediately: <span class="points-badge">+15</span></li>
+            </ul>
+
+            <h4 class="mt-2">Project Smooth Flow</h4>
+            <ul>
+                <li>Installation completed without delays: <span class="points-badge">+30</span></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2 id="customer-impact">Customer Impact Metrics (20%)</h2>
+
+            <div class="alert alert-success">
+                <strong>Shared Success:</strong> All team members on a project receive the same customer impact points, promoting teamwork and collective responsibility for customer satisfaction.
+            </div>
+
+            <h3>Final Customer Rating (per completed project)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Rating</th>
+                        <th>Points (All Team Members)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>⭐⭐⭐⭐⭐ 5-star</td>
+                        <td><span class="points-badge">+100 each</span></td>
+                    </tr>
+                    <tr>
+                        <td>⭐⭐⭐⭐ 4-star</td>
+                        <td><span class="points-badge">+60 each</span></td>
+                    </tr>
+                    <tr>
+                        <td>⭐⭐⭐ 3-star</td>
+                        <td><span class="points-badge">+30 each</span></td>
+                    </tr>
+                    <tr>
+                        <td>⭐⭐ 2-star</td>
+                        <td>0 points</td>
+                    </tr>
+                    <tr>
+                        <td>⭐ 1-star</td>
+                        <td>0 points</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Customer Feedback Highlights</h3>
+            <ul>
+                <li>Customer specifically praises department/individual: <span class="points-badge">+50 bonus</span> (manually awarded by admin)</li>
+                <li>Customer complaint: 0 points (no negative scoring - positive-only approach)</li>
+            </ul>
+
+            <h3 class="mt-3">Project Success Bonus (All Team Members)</h3>
+            <ul>
+                <li>Project completed on/before deadline: <span class="points-badge">+40 each</span></li>
+                <li>Project completed with zero rework: <span class="points-badge">+30 each</span></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Complexity Multipliers</h2>
+
+            <p>To ensure fairness across different project types, complexity multipliers are applied to base job completion points:</p>
+
+            <table class="mt-2">
+                <thead>
+                    <tr>
+                        <th>Complexity Level</th>
+                        <th>Multiplier</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Simple</strong></td>
+                        <td>1.0x</td>
+                        <td>Standard signboard designs, minimal customization, standard materials</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Medium</strong></td>
+                        <td>1.5x</td>
+                        <td>Custom designs, LED integration, multiple components, special materials</td>
+                    </tr>
+                    <tr>
+                        <td><strong>High</strong></td>
+                        <td>2.0x</td>
+                        <td>Fully custom unique designs, complex LED/electrical work, large-scale installations, multiple locations, special engineering</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="mt-2"><em>Assigned by: Administrator when project enters system</em></p>
+        </div>
+
+        <div class="content-section">
+            <h2>Quarterly Bonus Calculation</h2>
+
+            <div class="alert alert-warning">
+                <strong>Note:</strong> Point tiers will be calibrated after learning period based on actual performance data
+            </div>
+
+            <h3>Point Tiers & Bonus Structure</h3>
+            <table class="mt-2">
+                <thead>
+                    <tr>
+                        <th>Total Points</th>
+                        <th>Performance Level</th>
+                        <th>Bonus Multiplier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0 - 2,000</td>
+                        <td>Developing</td>
+                        <td>0.5x base</td>
+                    </tr>
+                    <tr>
+                        <td>2,001 - 4,000</td>
+                        <td>Meeting Expectations</td>
+                        <td>1.0x base</td>
+                    </tr>
+                    <tr>
+                        <td>4,001 - 6,000</td>
+                        <td>Exceeding Expectations</td>
+                        <td>1.5x base</td>
+                    </tr>
+                    <tr>
+                        <td>6,001 - 8,000</td>
+                        <td>Outstanding</td>
+                        <td>2.0x base</td>
+                    </tr>
+                    <tr>
+                        <td>8,001+</td>
+                        <td>Exceptional</td>
+                        <td>2.5x base</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="mt-3">Calculation Example</h3>
+            <div class="scoring-breakdown">
+                <p><strong>Quarterly base bonus pool:</strong> RM 500 per eligible employee</p>
+                <p><strong>Employee scores:</strong> 6,500 points (Outstanding level)</p>
+                <p><strong>Bonus calculation:</strong> RM 500 × 2.0 = <span class="highlight">RM 1,000</span></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Quality Safeguards</h2>
+
+            <div class="alert alert-warning">
+                <strong>Prevents Speed Without Quality:</strong> The system includes automatic quality gates to ensure speed bonuses are only awarded when quality standards are met.
+            </div>
+
+            <pre><code>IF speed bonus conditions met AND quality conditions met:
+  AWARD speed bonus + quality bonus
+ELSE IF only speed conditions met:
+  AWARD 0 points (quality standards not met)
+ELSE IF only quality conditions met:
+  AWARD quality bonus only</code></pre>
+
+            <h3 class="mt-3">Examples</h3>
+            <ul>
+                <li>Designer completes in 2 days BUT requires 3 revisions → <strong>No speed bonus</strong></li>
+                <li>Manufacturer completes 30% faster BUT fails quality check → <strong>No speed bonus</strong></li>
+                <li>Installer completes ahead of schedule AND customer gives 5 stars → <strong>Full bonuses awarded</strong></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Learning Period (First 30 Days)</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>✅ System Active</h3>
+                    <p>Full system active and visible during learning period</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Points Calculated</h3>
+                    <p>Points calculated and displayed in real-time</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎓 Learning Mode</h3>
+                    <p>Points DO NOT count toward bonuses during learning period</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 After Learning</h3>
+                    <p>Points start counting toward quarterly bonus after 30 days</p>
+                </div>
+            </div>
+
+            <p class="mt-2"><em>Allows everyone to understand the system without pressure. Training and support provided throughout learning period.</em></p>
+        </div>
+
+        <div class="content-section">
+            <h2>Fair Scoring with Dynamic Teams</h2>
+
+            <h3>How System Ensures Fairness</h3>
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>1. Individual Control</h3>
+                    <p>Your score is primarily based on your own work quality and speed</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Independent Collaboration</h3>
+                    <p>Your handoff quality is rated by the next person, regardless of who they are</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Shared Customer Success</h3>
+                    <p>Everyone benefits when customer is happy (team effort)</p>
+                </div>
+
+                <div class="card">
+                    <h3>4. No Penalty for Others</h3>
+                    <p>If another department delays, you don't lose your earned points</p>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Example Scenario</h3>
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>Designer completes job quickly and well</h4>
+                    <p>✅ Earns speed + quality points</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Manufacturing takes longer than expected</h4>
+                    <p>✅ Designer not penalized, keeps individual points</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Designer's handoff was clean</h4>
+                    <p>✅ Earns collaboration points</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Customer gives 5 stars</h4>
+                    <p>✅ Everyone shares +100 points customer impact bonus</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Result</h4>
+                    <p><strong>You control your score through your work quality, while still benefiting from team success</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Transparency & Communication</h2>
+
+            <h3>Visible to All Employees</h3>
+            <ul>
+                <li>Complete scoring breakdown (this document)</li>
+                <li>Point values for all actions</li>
+                <li>How bonuses are calculated</li>
+                <li>Their own scoring history and current status</li>
+                <li>Peer rating feedback received (not who rated, but what ratings)</li>
+            </ul>
+
+            <h3 class="mt-3">Regular Updates</h3>
+            <ul>
+                <li>Real-time points updates after each action</li>
+                <li>Mid-quarter progress summary</li>
+                <li>End-of-quarter final score</li>
+                <li>7-day review period for corrections</li>
+            </ul>
+
+            <h3 class="mt-3">Company-Wide Communication</h3>
+            <ul>
+                <li>Monthly newsletter with positive highlights</li>
+                <li>Company-wide average points (for context, not competition)</li>
+                <li>Success stories and best practices</li>
+                <li>System improvements based on feedback</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Administration & Dispute Resolution</h2>
+
+            <h3>Administrator Controls</h3>
+            <ul>
+                <li>Assign and adjust complexity multipliers</li>
+                <li>Review and correct scoring errors</li>
+                <li>Handle disputes or questions</li>
+                <li>Adjust point tiers after quarterly calibration</li>
+                <li>Generate reports on scoring trends</li>
+                <li>Pause scoring for extraordinary circumstances</li>
+            </ul>
+
+            <h3 class="mt-3">Appeals Process</h3>
+            <div class="process-flow">
+                <div class="process-step">
+                    <h4>1. Contact Administrator</h4>
+                    <p>Within 5 days of quarter end, with specific project details</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>2. Administrator Review</h4>
+                    <p>Reviews with supporting evidence</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>3. Correction if Valid</h4>
+                    <p>Made within 7-day review period</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>4. Employee Notified</h4>
+                    <p>Of outcome and any adjustments</p>
+                </div>
+            </div>
+
+            <h3 class="mt-3">Common Valid Corrections</h3>
+            <ul>
+                <li>Missed points due to system error</li>
+                <li>Incorrect complexity rating applied</li>
+                <li>Wrong peer rating assigned to wrong person</li>
+                <li>Documentation uploaded but not recorded</li>
+                <li>System downtime prevented timely action</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Quarterly Calibration</h2>
+
+            <h3>After Each Quarter, Administrators Will:</h3>
+
+            <div class="cards-grid mt-2">
+                <div class="card">
+                    <h3>1. Review Distribution</h3>
+                    <p>How many employees in each tier? Are tiers appropriately challenging?</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Adjust Tiers If Needed</h3>
+                    <p>If 80% in one tier, adjust thresholds for fairness</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Gather Feedback</h3>
+                    <p>Survey employees on system fairness and identify any issues</p>
+                </div>
+
+                <div class="card">
+                    <h3>4. Communicate Changes</h3>
+                    <p>Announce adjustments before new quarter with clear rationale</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Success Metrics for Scoring System</h2>
+
+            <h3>System Effectiveness Indicators</h3>
+
+            <h4>Efficiency Improvements</h4>
+            <ul>
+                <li>Reduced turnaround times across all stages</li>
+                <li>Fewer revision cycles</li>
+                <li>Higher first-time approval rates</li>
+            </ul>
+
+            <h4>Quality Improvements</h4>
+            <ul>
+                <li>Higher customer satisfaction ratings</li>
+                <li>Fewer defects and rework</li>
+                <li>Better handoff quality ratings</li>
+            </ul>
+
+            <h4>Employee Engagement</h4>
+            <ul>
+                <li>High system usage and engagement</li>
+                <li>Positive feedback on fairness</li>
+                <li>Reduced turnover</li>
+                <li>Increased motivation</li>
+            </ul>
+
+            <h4>Business Outcomes</h4>
+            <ul>
+                <li>Higher project throughput</li>
+                <li>Improved profit margins</li>
+                <li>Better resource utilization</li>
+                <li>Enhanced customer satisfaction</li>
+            </ul>
+        </div>
+
+        <div class="alert alert-success">
+            <h3>Ready to Learn More?</h3>
+            <p>Explore other sections to understand how the complete system works together:</p>
+            <ul class="mt-2">
+                <li><a href="dashboards.html" style="color: var(--primary-color);">View Personal Performance Dashboards</a></li>
+                <li><a href="user-roles.html" style="color: var(--primary-color);">Understand User Roles</a></li>
+                <li><a href="implementation.html" style="color: var(--primary-color);">See Implementation Plan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Signmastr Business Management System</strong></p>
+            <p>Product Requirements Document - Version 1.0</p>
+            <p>© 2025 Signmastr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

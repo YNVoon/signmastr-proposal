@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Roles - Signmastr Business Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Signmastr</h1>
+                <p>Business Management System</p>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-roles.html">User Roles</a></li>
+                    <li><a href="lead-management.html">Lead Management</a></li>
+                    <li><a href="quotation-process.html">Quotation</a></li>
+                    <li><a href="design-phase.html">Design</a></li>
+                    <li><a href="manufacturing.html">Manufacturing</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="project-closure.html">Project Closure</a></li>
+                    <li><a href="dashboards.html">Dashboards</a></li>
+                    <li><a href="performance-scoring.html">Performance Scoring</a></li>
+                    <li><a href="integrations.html">Integrations</a></li>
+                    <li><a href="implementation.html">Implementation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>User Roles</h1>
+            <p>The Signmastr Business Management System supports six distinct user roles, each with specific responsibilities and access levels.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Role Definitions</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Administrator</strong></td>
+                        <td>System oversight, quotation approval, installer assignment, overall management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Salesperson</strong></td>
+                        <td>Lead handling, customer communication, quotation preparation, design coordination</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Designer</strong></td>
+                        <td>Design creation, file uploads, design amendments</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Manufacturer</strong></td>
+                        <td>Production planning, manufacturing execution, material management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Installer</strong></td>
+                        <td>Installation execution, site documentation, customer sign-off</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer</strong></td>
+                        <td>View project status, approve designs, make payments</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h2>Detailed Role Descriptions</h2>
+
+            <div class="card mb-3">
+                <h3>👨‍💼 Administrator</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>System configuration and user management</li>
+                    <li>Review and approve all quotations before sending to customers</li>
+                    <li>Assign installers to completed manufacturing jobs</li>
+                    <li>Monitor system-wide performance metrics</li>
+                    <li>Assign project complexity levels (Simple, Medium, High)</li>
+                    <li>Handle performance scoring disputes and corrections</li>
+                    <li>Review and distribute customer feedback</li>
+                    <li>Manage quarterly bonus calculations</li>
+                </ul>
+
+                <p class="mt-2"><strong>Dashboard Access:</strong></p>
+                <ul>
+                    <li>Total active projects by stage</li>
+                    <li>Pending quotation approvals</li>
+                    <li>Projects awaiting payment</li>
+                    <li>Design queue length</li>
+                    <li>Manufacturing queue length</li>
+                    <li>Installations scheduled vs completed</li>
+                    <li>Outstanding invoices</li>
+                    <li>Revenue summary</li>
+                </ul>
+            </div>
+
+            <div class="card mb-3">
+                <h3>💼 Salesperson</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>Receive and respond to new leads from WhatsApp and website</li>
+                    <li>Communicate with potential customers</li>
+                    <li>Schedule and conduct site visits</li>
+                    <li>Collect site photos, measurements, and branding materials</li>
+                    <li>Upload site visit documentation</li>
+                    <li>Review and approve basic drafts from designers</li>
+                    <li>Create quotations based on basic drafts</li>
+                    <li>Submit quotations for administrator approval</li>
+                    <li>Send approved quotations to customers</li>
+                    <li>Collect 50% upfront payment</li>
+                    <li>Share full designs with customers for approval</li>
+                </ul>
+
+                <p class="mt-2"><strong>Dashboard Access:</strong></p>
+                <ul>
+                    <li>Active leads and projects</li>
+                    <li>Leads requiring follow-up</li>
+                    <li>Quotations pending customer response</li>
+                    <li>Projects in design phase</li>
+                    <li>Upcoming installations</li>
+                    <li>Personal sales performance metrics</li>
+                    <li>Team performance comparison</li>
+                </ul>
+
+                <p class="mt-2"><strong>Performance Tracking:</strong></p>
+                <ul>
+                    <li>Number of leads assigned</li>
+                    <li>Response time to new leads</li>
+                    <li>Conversion rate (leads to quotations)</li>
+                    <li>Quotation acceptance rate</li>
+                    <li>Total sales value</li>
+                    <li>Average deal size</li>
+                </ul>
+            </div>
+
+            <div class="card mb-3">
+                <h3>🎨 Designer</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>View available basic draft jobs in queue</li>
+                    <li>Select and accept basic draft jobs</li>
+                    <li>Create basic layout drafts for quotations</li>
+                    <li>Communicate with salespeople for clarifications</li>
+                    <li>Upload basic drafts for salesperson review</li>
+                    <li><strong>Automatic assignment to full design</strong> for projects where they created the basic draft</li>
+                    <li>Create detailed full designs after payment received</li>
+                    <li>Upload design files with version control</li>
+                    <li>Make design amendments based on feedback</li>
+                    <li>Provide manufacturing specifications</li>
+                </ul>
+
+                <p class="mt-2"><strong>Dashboard Access:</strong></p>
+                <ul>
+                    <li>Available basic draft jobs (can select from queue)</li>
+                    <li>My active basic drafts in progress</li>
+                    <li>My projects awaiting payment (basic draft completed)</li>
+                    <li>My full design projects ready to start (payment received)</li>
+                    <li>My active full design projects</li>
+                    <li>Full designs pending approval</li>
+                    <li>Designs requiring amendments</li>
+                    <li>Completion metrics (basic drafts vs. full designs)</li>
+                </ul>
+
+                <div class="alert alert-info mt-2">
+                    <strong>Important:</strong> The designer who creates the basic draft is automatically assigned to complete the full design for that project, ensuring continuity and quality.
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <h3>🏭 Manufacturer</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>View manufacturing job queue</li>
+                    <li>Accept and start manufacturing jobs</li>
+                    <li>Review design specifications and materials needed</li>
+                    <li>Check material inventory and requisition if needed</li>
+                    <li>Execute production work</li>
+                    <li>Upload photo documentation during production</li>
+                    <li>Complete safety checklists</li>
+                    <li>Submit jobs for quality check</li>
+                    <li>Mark completed jobs as "Ready for Installation"</li>
+                    <li>Report design issues early in the process</li>
+                    <li>Provide material feedback for future improvements</li>
+                </ul>
+
+                <p class="mt-2"><strong>Dashboard Access:</strong></p>
+                <ul>
+                    <li>Jobs in manufacturing queue</li>
+                    <li>Jobs in progress</li>
+                    <li>Completed jobs awaiting installation</li>
+                    <li>Material stock levels</li>
+                    <li>Production capacity overview</li>
+                </ul>
+            </div>
+
+            <div class="card mb-3">
+                <h3>🔧 Installer</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>View assigned installation jobs via mobile app</li>
+                    <li>Access customer location and contact information</li>
+                    <li>View design specifications and installation requirements</li>
+                    <li>Navigate to installation site</li>
+                    <li>Perform site check-in with location and "before" photo</li>
+                    <li>Complete installation work</li>
+                    <li>Report any issues during installation</li>
+                    <li>Perform site check-out with "after" photo</li>
+                    <li>Collect customer digital signature on delivery order</li>
+                    <li>Upload signed delivery order to system</li>
+                    <li>Rate handoff quality from manufacturing</li>
+                </ul>
+
+                <p class="mt-2"><strong>Mobile App Features:</strong></p>
+                <ul>
+                    <li>Job list and schedule</li>
+                    <li>GPS navigation to site</li>
+                    <li>Photo capture and upload</li>
+                    <li>Digital signature collection</li>
+                    <li>Issue reporting</li>
+                    <li>Work history</li>
+                </ul>
+            </div>
+
+            <div class="card mb-3">
+                <h3>👤 Customer</h3>
+                <p><strong>Primary Functions:</strong></p>
+                <ul>
+                    <li>View real-time project status</li>
+                    <li>See design previews and files</li>
+                    <li>Approve or request amendments to designs</li>
+                    <li>View quotations and invoices</li>
+                    <li>Track payment status</li>
+                    <li>Access project history and documents</li>
+                    <li>Provide feedback and ratings</li>
+                </ul>
+
+                <div class="alert alert-warning mt-2">
+                    <strong>Note:</strong> Customer portal is marked as optional future enhancement in the implementation roadmap.
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Role Interactions</h2>
+
+            <div class="process-flow">
+                <h3 class="mb-2">Typical Project Flow Across Roles</h3>
+
+                <div class="process-step">
+                    <h4>Lead Capture → Salesperson</h4>
+                    <p>System automatically assigns new leads to salespeople based on WhatsApp number or round-robin distribution</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Salesperson → Designer (Basic Draft)</h4>
+                    <p>After site visit, salesperson uploads materials. Designer selects job from queue and creates basic draft</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Designer → Salesperson</h4>
+                    <p>Basic draft submitted for salesperson review and approval</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Salesperson → Administrator</h4>
+                    <p>Quotation created and submitted for administrator approval</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Administrator → Customer</h4>
+                    <p>Approved quotation sent to customer</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Payment → Designer (Full Design)</h4>
+                    <p>50% payment triggers full design phase. Same designer automatically assigned</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Designer → Manufacturing</h4>
+                    <p>Approved full design sent to manufacturing queue with specifications</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Manufacturing → Installer</h4>
+                    <p>Completed product ready for installation. Administrator assigns installer</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Installer → Customer</h4>
+                    <p>Installation completed with customer sign-off</p>
+                </div>
+
+                <div class="process-step">
+                    <h4>Administrator → Customer</h4>
+                    <p>Final invoice sent for remaining 50% payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p><strong>Signmastr Business Management System</strong></p>
+            <p>Product Requirements Document - Version 1.0</p>
+            <p>© 2025 Signmastr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
