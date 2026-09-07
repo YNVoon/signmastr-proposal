@@ -1,0 +1,20 @@
+# Environment variables — real values stay local; .env.example is the template
+.env
+.env.*
+!.env.example
+
+# Firebase CLI deploy caches (firebase.json / .firebaserc stay tracked)
+.firebase/
+
+# Dependencies / build output
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# OS / editor cruft
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
